@@ -1,7 +1,12 @@
-# BlackBox-Agentic-AI-for-Predictive-Maintenance
-What This Project Does
+# 🧠 BlackBox Agentic AI for Predictive Maintenance
 
-The system analyzes maintenance and fault history to:
+An agent-driven system that predicts failures, explains the root cause, and recommends what action to take next.
+
+This project focuses on decisions, not just predictions.
+
+## 🚀 Overview
+
+BlackBox Agentic AI for Predictive Maintenance analyzes maintenance and fault history to automatically:
 
 Predict failure probability
 
@@ -13,48 +18,61 @@ Generate Root Cause Analysis (RCA)
 
 Recommend Corrective and Preventive Actions (CAPA)
 
-Output everything in a structured Excel report
+The output is a structured Excel report that can be directly used by maintenance, reliability, and manufacturing teams.
 
-Once you run it, you don’t get charts to interpret.
-You get answers.
+## 🔍 What Makes It Different
 
-Why This Matters
+Most predictive maintenance systems stop at “this might fail.”
 
-Most predictive maintenance tools stop at “this might fail.”
-
-This one answers:
+This system answers:
 
 Why is it failing?
 
-How urgent is it?
+How urgent is the issue?
 
-What action should be taken now?
+What should be fixed now?
 
 What should be changed to prevent it permanently?
 
-That’s the difference between analytics and decision-making.
+No dashboards to interpret.
+No manual rule writing.
 
-Project Structure
+## 🧠 Why Agentic
 
-The system is organized as a pipeline of notebooks, each with a clear role:
+The system reasons across:
 
-File	Purpose
-ai1.ipynb	Data loading, cleaning, and normalization
-ai2.ipynb	Feature engineering and health indicators
-ai3.ipynb	Failure probability and RUL estimation
-ai4.ipynb	Fleet-level pattern and recurrence detection
-ai5.ipynb	Agentic reasoning for RCA and CAPA
-ai6.ipynb	Full pipeline execution and Excel report generation
+Fault history
 
-Each notebook builds on the previous one.
+Severity
 
-Key Outputs
+Recurrence patterns
+
+Cost impact
+
+It prioritizes actions and generates explanations autonomously, acting as a maintenance decision agent rather than a simple model.
+
+## 🗂 Project Structure
+
+├── ai1.ipynb   # Data ingestion and cleaning
+
+├── ai2.ipynb   # Feature engineering and health indicators
+
+├── ai3.ipynb   # Failure probability and RUL estimation
+
+├── ai4.ipynb   # Pattern and recurrence detection
+
+├── ai5.ipynb   # Agentic RCA and CAPA reasoning
+
+└── ai6.ipynb   # Full pipeline execution and report generation
+
+
+## 📊 Output
 
 The system generates a single Excel file containing:
 
-Asset / vehicle ID
+Asset or vehicle ID
 
-Fault description and category
+Fault category and description
 
 Failure probability (%)
 
@@ -62,7 +80,7 @@ Remaining Useful Life (hours)
 
 Priority score
 
-Root Cause Analysis (text)
+Root Cause Analysis
 
 Corrective actions
 
@@ -73,3 +91,5 @@ Recommended timeline
 Manufacturing and design feedback
 
 Estimated maintenance cost
+
+This report is ready to share with stakeholders.
